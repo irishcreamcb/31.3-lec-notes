@@ -1,15 +1,15 @@
 # Fdb version 4
-["pdflatex"] 1723127339.77202 "c:/Users/Noah/Documents/admu/3-1/math31.3/lec-notes/31.3-lec-notes.tex" "31.3-lec-notes.pdf" "31.3-lec-notes" 1723127342.48618 0
-  "31.3-lec-notes.aux" 1723127341 1796 9ba6142ec7557d85af7e78be13c23757 "pdflatex"
-  "31.3-lec-notes.tex" 1723127338 9405 fdb77de433f7ec38c3b09c161a1861d0 ""
+["pdflatex"] 1723391734.39707 "c:/Users/Noah/Documents/admu/3-1/math31.3/lec-notes/31.3-lec-notes.tex" "31.3-lec-notes.pdf" "31.3-lec-notes" 1723391737.29125 0
+  "31.3-lec-notes.aux" 1723391736 128 eab315eeb3908270bf88bf23357481f9 "pdflatex"
+  "31.3-lec-notes.tex" 1723391732 3475 e10368cffa07996b41ad204e68b4d3e5 ""
   "C:/Users/Noah/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1719470805 286814 82d7d079990c7446a2b3a64dce32e0b6 ""
   "C:/Users/Noah/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710387013 24232631 dac795b3d1bdc6f8d687e312eb564c07 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona-sc.enc" 1280852356 2452 388b1f44dfda03ab19527677af70e7fb ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc" 1280852356 2027 f8708480c25b8150843bb94b8b39c93f ""
-  "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ex-iwona.enc" 1280852356 3130 8cd10f890623d1a768321ebf954797d3 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc" 1280852356 2214 c999541a20776b560b1683fd4d39b07f ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc" 1280852356 1962 cace5a3042b67248932d50e41975d81a ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc" 1280852356 2607 4f90eff2cc240e3112f0965712b5fac0 ""
+  "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/tfm/nowacki/iwona/ec-iwonacl-sc.tfm" 1280852397 10668 097539b3533bdb62963a6778c5bbc3f1 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/tfm/nowacki/iwona/ec-iwonacl.tfm" 1280852397 12620 855b2bd225dfa34a2dbb052931772572 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/tfm/nowacki/iwona/ec-iwonacli.tfm" 1280852397 12836 6ac8e7d2453bfb1c2698968510e38791 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/tfm/nowacki/iwona/ec-iwonacm-sc.tfm" 1280852397 10668 0e8a304dbf076349c2fc16874a37d3d5 ""
@@ -27,6 +27,8 @@
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacl.pfb" 1280852409 143898 34ae3b0312bcdea7d23617a75256a439 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacli.pfb" 1280852409 140620 b2b53535a3c1e4b5c7ed968806b15360 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacm.pfb" 1280852409 143968 fdb54fed42ac663db541a601cf28ad64 ""
+  "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb" 1247596653 11493 4f5ed183a47d3197cf8cd322325db6de ""
+  "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb" 1247596673 31764 459c573c03a4949a528c2cc7f557e217 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/context/base/mkii/supp-pdf.mkii" 1580390158 71627 94eb9990bed73c364d7f53f960cc8c5b ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/generic/etexcmds/etexcmds.sty" 1576433638 7734 b98cbb34c81f667027c1e3ebdbfce34b ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/generic/iftex/iftex.sty" 1643997108 7237 bdd120a32c8fdb4b433cf9ca2e7cd98a ""
@@ -150,9 +152,12 @@
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/Noah/Documents/admu/3-1/math31.3/lec-notes/31.3-lec-notes.tex" 1723127338 9405 fdb77de433f7ec38c3b09c161a1861d0 ""
+  "c:/Users/Noah/Documents/admu/3-1/math31.3/lec-notes/31.3-lec-notes.tex" 1723391732 3475 e10368cffa07996b41ad204e68b4d3e5 ""
+  "chapter1.aux" 1723391736 1403 5b52ede369bf0b1b84538855c61946ae "pdflatex"
+  "chapter1.tex" 1723391582 6359 e4b3d717f3a340f07da19468cdd14584 ""
   (generated)
   "31.3-lec-notes.aux"
   "31.3-lec-notes.log"
   "31.3-lec-notes.pdf"
+  "chapter1.aux"
   (rewritten before read)

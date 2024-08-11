@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.14)  8 AUG 2024 22:29
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.3.14)  11 AUG 2024 23:55
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -578,24 +578,25 @@ Package zref Info: New property: mdf@pagevalue on input line 895.
 ) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/setspace\setspace.sty
 Package: setspace 2022/12/04 v6.7b set line spacing
 )
-\c@theo=\count310
- (31.3-lec-notes.aux)
+\c@example=\count310
+\c@theo=\count311
+ (31.3-lec-notes.aux (chapter1.aux))
 \openout1 = `31.3-lec-notes.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 85.
-LaTeX Font Info:    ... okay on input line 85.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 101.
+LaTeX Font Info:    ... okay on input line 101.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -633,16 +634,16 @@ LaTeX Font Info:    ... okay on input line 85.
 
 (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count311
+\scratchcounter=\count312
 \scratchdimen=\dimen271
 \scratchbox=\box71
-\nofMPsegments=\count312
-\nofMParguments=\count313
+\nofMPsegments=\count313
+\nofMParguments=\count314
 \everyMPshowfont=\toks44
-\MPscratchCnt=\count314
+\MPscratchCnt=\count315
 \MPscratchDim=\dimen272
-\MPnumerator=\count315
-\makeMPintoPDFobject=\count316
+\MPnumerator=\count316
+\makeMPintoPDFobject=\count317
 \everyMPtoPDFconversion=\toks45
 ) (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
@@ -650,8 +651,11 @@ Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 48
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
+\openout2 = `chapter1.aux'.
+
+ (chapter1.tex
 Chapter 1.
-LaTeX Font Info:    Trying to load font information for OT1+iwonalcm on input line 94.
+LaTeX Font Info:    Trying to load font information for OT1+iwonalcm on input line 8.
 (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/iwona\ot1iwonalcm.fd
 File: ot1iwonalcm.fd 2005/10/05 v1.2 font definition file for OT1/iwonalcm (MW)
 
@@ -666,7 +670,7 @@ LaTeX Info: Font shape OT1/iwonalcm/mx/it has incorrect series value `mx'.
             Found on input line 19.
 
 )
-LaTeX Font Info:    Trying to load font information for OML+iwonalc on input line 94.
+LaTeX Font Info:    Trying to load font information for OML+iwonalc on input line 8.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/iwona\omliwonalc.fd
 File: omliwonalc.fd 2008/07/22 v0.995 font definition file for OML/iwonalc (MW)
 
@@ -676,7 +680,7 @@ LaTeX Info: Font shape OML/iwonalc/mx/it has incorrect series value `mx'.
             Found on input line 11.
 
 )
-LaTeX Font Info:    Trying to load font information for OMS+iwonalc on input line 94.
+LaTeX Font Info:    Trying to load font information for OMS+iwonalc on input line 8.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/iwona\omsiwonalc.fd
 File: omsiwonalc.fd 2008/07/22 v0.995 font definition file for OMS/iwonalc (MW)
 
@@ -686,7 +690,7 @@ LaTeX Info: Font shape OMS/iwonalc/mx/n has incorrect series value `mx'.
             Found on input line 11.
 
 )
-LaTeX Font Info:    Trying to load font information for OMX+iwonalc on input line 94.
+LaTeX Font Info:    Trying to load font information for OMX+iwonalc on input line 8.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/iwona\omxiwonalc.fd
 File: omxiwonalc.fd 2008/07/22 v0.995 font definition file for OMX/iwonalc (MW)
 
@@ -696,58 +700,41 @@ LaTeX Info: Font shape OMX/iwonalc/mx/n has incorrect series value `mx'.
             Found on input line 11.
 
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 8.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 94.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 8.
  (C:\Users\Noah\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) [1
 
 
+
 {C:/Users/Noah/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc}{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc}]
-Package mdframed Info: mdframed works in twoside mode on input line 122.
+Package mdframed Info: mdframed works in twoside mode on input line 36.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 122.
+(mdframed)              on input line 36.
 Package mdframed Info: mdframed detected package amsthm 
  changed the theorem header of amsthm
-(mdframed)              on input line 131.
-
-
-LaTeX Font Warning: Font shape `T1/iwonalc/m/sl' undefined
-(Font)              using `T1/iwonalc/m/it' instead on input line 136.
-
-[2]
-Chapter 2.
-[3
-
-{C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ex-iwona.enc}]
-
-LaTeX Font Warning: Font shape `T1/iwonalc/m/sl' undefined
-(Font)              using `T1/iwonalc/m/it' instead on input line 151.
-
-[4
-
-]
-Chapter 3.
-[5] (31.3-lec-notes.aux)
+(mdframed)              on input line 45.
+) [2] [3] (31.3-lec-notes.aux (chapter1.aux))
  ***********
 LaTeX2e <2023-11-01> patch level 1
 L3 programming layer <2024-02-20>
  ***********
  ) 
 Here is how much of TeX's memory you used:
- 16555 strings out of 474436
- 327266 string characters out of 5742426
- 1940190 words of memory out of 5000000
- 38547 multiletter control sequences out of 15000+600000
- 631376 words of font info for 83 fonts, out of 8000000 for 9000
+ 16592 strings out of 474436
+ 328179 string characters out of 5742426
+ 1943190 words of memory out of 5000000
+ 38577 multiletter control sequences out of 15000+600000
+ 634019 words of font info for 84 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,13n,93p,529b,860s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacl.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacli.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacm.pfb>
-Output written on 31.3-lec-notes.pdf (5 pages, 100167 bytes).
+ 84i,19n,93p,529b,860s stack positions out of 10000i,1000n,20000p,200000b,200000s
+<C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacl.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacli.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/nowacki/iwona/iwonacm.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/latxfont/line10.pfb><C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/symbols/msam10.pfb>
+Output written on 31.3-lec-notes.pdf (3 pages, 103247 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

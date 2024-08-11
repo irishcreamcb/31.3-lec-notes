@@ -28,6 +28,12 @@
   {\renewcommand\qedsymbol{$\blacksquare$}\begin{proof}[Solution]}
   {\end{proof}}
 
+\newcounter{example}[section]
+
+\newenvironment{example}
+  {\renewcommand\qedsymbol{$\blacksquare$}\stepcounter{example}\begin{proof}[\upshape\textsc{\textbf{\large{Example \arabic{example}}}}]}
+  {\end{proof}}
+
 \renewcommand{\theequation}{\thechapter.\arabic{equation}}
 \renewcommand{\thesection}{\colorbox{CornflowerBlue!30}{\LARGE\scshape\thechapter.\arabic{section}}}
 
@@ -55,7 +61,7 @@
         linewidth=2pt,topline=true,
         frametitleaboveskip=\dimexpr-\ht\strutbox\relax,}
     \begin{mdframed}[]\relax%
-}{\end{mdframed}}
+}{\vspace{1pt}\end{mdframed}}
 
 \newenvironment{defn}[1][]{%
     \ifstrempty{#1}%
@@ -79,76 +85,21 @@
 
 \newcommand{\lh}{l'H\^{o}pital}
 \newcommand{\der}{\mathrm{d}}
+\newcommand{\e}{\mathrm{e}}
+
+\makeatletter
+\newcommand*{\defeq}{\mathrel{\rlap{%
+                     \raisebox{0.3ex}{$\m@th\cdot$}}%
+                     \raisebox{-0.3ex}{$\m@th\cdot$}}%
+                     =}
+\makeatother
+
+\pagestyle{plain}
 
 \setstretch{1.25}
 
 \begin{document}
 
-\chapter{Calculus I Addendums}
-I've labelled this section as such because it really feels like these topics should have been covered in MATH 31.1 and 31.2, seeing as they're focused on
-limits, derivatives, and integrals---all the key aspects of basic calculus---but they're just tacked on here for some reason. Regardless, here they are.
-Section 1 focuses on \textbf{solving limits by using derivatives}, and section 2 focuses on \textbf{integrals of functions on infinite intervals}, \textit{or}
-\textbf{functions that diverge to infinity on closed intervals.}  
-
-\section{Indeterminate forms and \lh's rule} 
-Recall the following limit from elementary calculus:\[
-    \lim_{x\to 0 } \frac{\sin x}{x} = 1. 
-\] You might remember that this limit was proved using arc lengths of a circle, or maybe the squeeze theorem. Either way, it's clear that we can't use
-the simpler methods of solving a limit (like the limit laws) to find this one. Direct substitution yields the fraction \(\frac{0}{0}\), which isn't very helpful.\par 
-Now, imagine you're Johann Bernoulli looking at this equation in the 17th century and you notice a few things:\begin{enumerate}
-    \item that \(\sin x\) and \(x\) are both differentiable, with \(
-        \dfrac{\der }{\der x} \sin x = \cos x \) and \( \dfrac{\der }{\der x} x = 1 
-    \) respectively,
-    \item that both \(f' = \cos x\) and \(g' = 1\) are continuous throughout the real numbers, and 
-    \item the limit of \(\dfrac{\cos x}{1}\) as \(x\) approaches \(1\) is, trivially, 1. 
-\end{enumerate} 
-Huh! Isn't that interesting! Being the mathematician that you are, you immediately think of whether or not this can be generalized to include a broader range 
-of functions, and not just relatively simple ones like \(\sin x\) and \(x\).\par 
-You decide to investigate the fact that both functions were equal to 0 when evaluated at \(x = a\), so you set up two functions \(f\) and \(g\), where \(f(a) = g(a) = 0\). 
-For good measure (and for our convenience), you assume that both their derivatives are continuous and that \(g'(x) \neq 0\). Then, you try evaluating the limit of their quotient, as such:\begin{align*}
-    \lim_{x\to a} \frac{f(x)}{g(x)} &= \lim_{x\to a} \frac{f(x) - f(a)}{g(x) - g(a)},~\text{since \(f(a) = g(a) = 0\).}\\
-    \intertext{Then, we can divide the numerator and denominator by the same value, \(x - a\), without changing the overall value:} 
-    &= \lim_{x \to a} \frac{\dfrac{f(x) - f(a)}{x-a}}{\dfrac{g(x) - g(a)}{x - a}} = \frac{\displaystyle{} \lim_{x\to a} \frac{f(x) - f(a)}{x-a}}{\displaystyle{} \lim_{x\to a} \frac{g(x) - g(a)}{x-a}}\\ 
-    \intertext{Wait a minute. That looks familiar! These limits on the numerator and the denominator are precisely \(f'(a)\) and \(g'(a)\)!}
-    &= \frac{f'(a)}{g'(a)} = \lim_{x \to a} \frac{f'(x)}{g'(x)},~\text{since \(f'\) and \(g'\) are continuous.} 
-\end{align*}
-Of course, you being one of the smartest mathematicians of all time, you don't stop there. You generalize it even further to go beyond the rather restrictive conditions 
-we placed on ourselves for this example to work as nicely as it did, armed with all the tools of your calculus-addled brain.\footnote{Proving the very generalized and 
-extended \lh's rule involves a lot of calculus that we haven't learned yet. I might include a proof of it in the latter pages or something, but there are \textit{a lot} of cases.} 
-Satisfied with yourself, but desperate for some money, you sell it to a colleague, who promptly publishes it, and the theorem is now forever named after him and not after you. 
-Oh well. At least you have about a dozen generations left to solidify your family name's fame.\par 
-We now introduced the generalized theorem to solve limits which take on the form \(\frac{0}{0}\) or \(\frac{\pm \infty}{\pm \infty}\) when direct substitution is attempted, named after
-17th century mathematician Guillaume de \lh.
-\begin{theo}[\lh's rule]
-Suppose that\begin{itemize}
-    \item two functions \(f\) and \(g\) are differentiable;
-    \item \(g'(x) \neq 0 \) on some open interval \(I\) that contains a constant \(a\), except
-possibly \(g'(a) = 0\); and 
-    \item \(\lim_{x\to a} f(x) = \lim_{x\to a} g(x) = 0\), or both limits diverge to either positive or negative infinity.
-\end{itemize} Then,\[
-    \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}.
-\]
-\end{theo}
-Note that the constant \(a\) that \(x\) approaches in this limit may be either from the right or the left (i.e.\ \(a^+\) or \(a^-\)), or could also be as \(x\) 
-approaches either positive or negative infinity.
-\section{Improper integrals}
-
-\chapter{Why you can't ``Add to Infinity'', and why we do it anyway}
-When I first encountered infinite series in Kumon, of all places, it was my least favorite part of math (one, of course, of many; I used to \textit{hate} math). 
-It was just so counterintuitive. How the flip do you add an infinite amount of numbers? Then, more than 5 years later in the year of our Lord 2024, I read 
-Jay Cummings' Real Analysis textbook and understood what it meant for a series to converge to a value---which is what we mean when we write \(\sum_{n=0}^{\infty} f(n) = s\), 
-for some constant \(s\)---and it all made sense. Actual convergence won't be tackled until MATH 90.1, as far as I know, so you needn't worry yourself with it now, but if
-you're comfortable with \(\varepsilon-\delta\) limits for functions as \(x \to \infty\), the idea is very similar.\par 
-Anyway, my point is that ``adding to infinity'' is rightfully nonsense, and understanding sequences and series becomes much more rewarding once you do away 
-with that idea. Section 1 covers some elementary properties about series' little siblings, \textbf{sequences}, before we get into actual \textbf{series} in section 2. 
-Then, section 3 covers the various \textbf{tests for convergence}, of which there are many (oh, so many). Finally, section 4 talks about representing \textbf{functions as power series},
-primarily focusing on the infamous Taylor series expansions.
-\section{Sequences} 
-\section{Series}
-\section{Tests for convergence}
-\section{Functions as power series}
-
-\chapter{Doing it with Four Guys simultaneously}
-Don't let the innuendo fool you: this chapter title is an invitation to \textit{multivariate calculus} and not polyamory (it's also a quote from one of the best teachers ever).
+\include{chapter1}
 
 \end{document}
