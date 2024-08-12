@@ -40,8 +40,8 @@ Suppose that\begin{itemize}
 possibly \(g'(a) = 0\); and 
     \item \(\lim_{x\to a} f(x) = \lim_{x\to a} g(x) = 0\), or both limits diverge to either positive or negative infinity.
 \end{itemize} Then,\[
-    \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}.
-\]
+    \lim_{x\to a} \frac{f(x)}{g(x)} = \lim_{x\to a} \frac{f'(x)}{g'(x)}, 
+\] provided that the limit on the right-hand side of the equation exists. 
 \end{theo}
 Note that the constant \(a\) that \(x\) approaches in this limit may be either from the right or the left (i.e.\ \(a^+\) or \(a^-\)), or could also be as \(x\) 
 approaches either positive or negative infinity.\par 
@@ -60,11 +60,54 @@ approaches either positive or negative infinity.\par
 Once we invoke \lh's rule once, we can continue solving the limit as usual, using the same rules that we've learned from previous calculus classes, as we did here. However, it's also 
 possible that once we \textit{do} proceed with this, we stumble across an indeterminate form \textit{again}, and we need to use \lh's rule once more. It's important to be 
 careful in checking whether or not the conditions to the theorem apply.\par 
-Before we proceed with another example, let's take some time to clarify what exactly an indeterminate form is, and why we call them as such. Later, we'll also see that we can transform certain indeterminate forms 
-into ones that allow us to use \lh's rule even when the original expression isn't a quotient.
+Before we proceed with another example, let's clarify what exactly an \textbf{indeterminate form} is, and why we call them as such. We'll also see that we can transform certain indeterminate forms 
+into one that allows us to use \lh's rule.
 \begin{center}
-    \colorbox{CornflowerBlue!20}{\begin{minipage}{0.97\textwidth}
-        Say we don't know anything about \lh's rule, and we also don't know that the 
+    \colorbox{Periwinkle!30}{\begin{minipage}{0.97\textwidth}
+        \textbf{\scshape{Adventures in Sir Clark's Class.}} Say we don't know anything about \lh's rule, and we also don't know what to do when a limit evaluates to \(\frac{0}{0}\). So, we go about our lives solving things 
+        with the limit laws, when we stumble across our favorite limit from 31.1:\[
+            \lim_{x\to 0} \frac{\sin x}{x}.\quad\text{Not knowing any better, we use direct substitution and evaluate this to be}~\lim_{x\to 0} \frac{\sin x}{x} = \frac{0}{0}.
+        \] Great! But then we stumble across another, similar looking limit:\[
+            \lim_{x\to 0} \frac{\sin 2x}{x}.\quad\text{Again, clueless, we use direct substitution and conclude that this is also}~ \lim_{x\to 0} \frac{\sin 2x}{x} = \frac{0}{0}.
+        \] But then, we attend Sir Clark's class. He then tells us 
+        that the limit of \(\frac{\sin x}{x}\) as \(x\) approaches 0 is 1, and with some careful manipulation, he also shows that the limit of \(\frac{\sin 2x}{x}\) as \(x\) approaches 1
+        is actually \(\frac{1}{2}\). Does this mean, by the transitive property of the equals sign, that\[
+            \lim_{x\to 0} \frac{\sin x}{x} =\lim_{x\to 0} \frac{\sin 2x}{x} = \frac{0}{0} = \frac{1}{2} = 1? 
+        \] 
     \end{minipage}}
 \end{center}
+You can easily see how this can be extended to make any number be equal to anything, which is why we \textit{never} write \(= \frac{0}{0}\) when evaluating limits. We instead 
+say that the limit takes on the \textbf{form} of \(\frac{0}{0}\), to avoid any confusion. We then call this form \textbf{indeterminate} because, as this example has shown, 
+two limits taking on an identical indeterminate form tells us nothing about what the actual value of the limits are.\par
+Note, however, that the fraction \(\frac{0}{0}\) isn't the only indeterminate form. The theorem above also specifies that both limits could also diverge to infinity. Here's an example of what that
+would look like. 
+\begin{example}
+    Evaluate \(\displaystyle\lim_{x\to \infty}\frac{\ln x}{\sqrt{x^2 + 1}}\).\par\vspace{3pt} 
+    Clearly, if we were to just evaluate this limit at face value, we would get the form \(\frac{\infty}{\infty}\). This is an indeterminate form, so we can check
+    if \lh's rule applies. Letting \(f \defeq \ln x\) and \(g \defeq \sqrt{x^2 + 1}\), we can see that both these functions are differentiable, that they are nonzero 
+    on the interval \((0, \infty)\), and that both limits diverge to positive infinity as \(x\) grows larger and larger. We can then use \lh's rule. Thus,\begin{align*}
+        \lim_{x\to \infty}\frac{\ln x}{\sqrt{x^2 + 1}} &= \lim_{x\to \infty} \frac{1/x}{\frac{1}{2}{(x^2 + 1)}^{-1/2} \cdot 2x} = \lim_{x\to\infty} \biggl( \frac{1}{x} \cdot \frac{\sqrt{x^2 + 1}}{x} \biggr) = \lim_{x\to\infty} \frac{\sqrt{x^2 +1}}{x^2}.\\
+        \intertext{This limit, however, \textit{still} has an indeterminate form, so we use \lh's rule again.\footnotemark}
+        &= \lim_{x\to\infty} \frac{\frac{1}{2}{(x^2 + 1)}^{-1/2} \cdot \cancel{2x}}{\cancel{2x}} = \lim_{x\to\infty}\frac{1}{2\sqrt{x^2 +1}} = 0. 
+    \end{align*}
+    Therefore, the limit of \(\dfrac{\ln x}{\sqrt{x^2 + 1}}\) as \(x\) approaches \(\infty\) is 0. 
+\end{example}
+\footnotetext{We omit the usual checks here, but it's straightforward to verify for yourself that the conditions are met.}
+We see here the aforementioned case wherein we can repeatedly apply \lh's rule to the limit \textit{if} it takes on an indeterminate form again. 
+We might be tempted to get a bit trigger-happy with this newfound tool, and try to find places where we can apply it, but it's important to always check 
+if the conditions are met and that no other possible manipulation to make the limit more digestible is possible, because there are situations in which haphazardly applying \lh's rule can fail, and 
+we might discover that there was a much easier solution available all along.
+\begin{example}
+    Evaluate \(\displaystyle\lim_{x\to -\infty}\frac{x + \sin x}{2x}\).\par\vspace{2pt}
+    If we were to blindly attempt \lh's rule here (because direct substitution yields \(\frac{-\infty}{-\infty}\)), we would then get\begin{align*}
+        \lim_{x\to -\infty}\frac{x + \sin x}{2x} &= \lim_{x\to -\infty} \frac{1 + \cos x}{2}, \\
+        \intertext{which does not exist. This is then in violation of the last part of \lh's rule, which stipulates that the limit after differentiating 
+        the numerator and the denominator must exist for the theorem to apply. But, notice that}
+        \lim_{x\to -\infty}\frac{x + \sin x}{2x} &= \lim_{x\to -\infty} \biggl( \frac{x}{2x} + \frac{\sin x}{2x}\biggr) = \lim_{x\to -\infty} \biggl( \frac{1}{2} + \frac{\sin x}{2x}\biggr) \\
+        &= \frac{1}{2} + \lim_{x\to -\infty} \frac{\sin x}{2x}. \\ 
+        \intertext{We can solve this limit by the squeeze theorem (check this for yourself!), which evaluates to 0, so}
+        &= \frac{1}{2} + 0 = \frac{1}{2}. 
+    \end{align*} 
+    Therefore, the limit of \(\dfrac{x + \sin x}{2x}\) as \(x\) approaches \(-\infty\) is \(\dfrac{1}{2}\).
+\end{example}
 \section{Improper integrals}

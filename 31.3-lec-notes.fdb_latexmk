@@ -1,11 +1,12 @@
 # Fdb version 4
-["pdflatex"] 1723391734.39707 "c:/Users/Noah/Documents/admu/3-1/math31.3/lec-notes/31.3-lec-notes.tex" "31.3-lec-notes.pdf" "31.3-lec-notes" 1723391737.29125 0
-  "31.3-lec-notes.aux" 1723391736 128 eab315eeb3908270bf88bf23357481f9 "pdflatex"
-  "31.3-lec-notes.tex" 1723391732 3475 e10368cffa07996b41ad204e68b4d3e5 ""
+["pdflatex"] 1723473271.6574 "c:/Users/Noah/Documents/admu/3-1/math31.3/lec-notes/31.3-lec-notes.tex" "31.3-lec-notes.pdf" "31.3-lec-notes" 1723473274.44116 0
+  "31.3-lec-notes.aux" 1723473273 128 7fc418b957dc97983c74f3b0a3b19b9b "pdflatex"
+  "31.3-lec-notes.tex" 1723467233 3475 e10368cffa07996b41ad204e68b4d3e5 ""
   "C:/Users/Noah/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1719470805 286814 82d7d079990c7446a2b3a64dce32e0b6 ""
   "C:/Users/Noah/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1710387013 24232631 dac795b3d1bdc6f8d687e312eb564c07 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona-sc.enc" 1280852356 2452 388b1f44dfda03ab19527677af70e7fb ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ec-iwona.enc" 1280852356 2027 f8708480c25b8150843bb94b8b39c93f ""
+  "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/ex-iwona.enc" 1280852356 3130 8cd10f890623d1a768321ebf954797d3 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/mi-iwona.enc" 1280852356 2214 c999541a20776b560b1683fd4d39b07f ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/rm-iwona.enc" 1280852356 1962 cace5a3042b67248932d50e41975d81a ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/iwona/sy-iwona.enc" 1280852356 2607 4f90eff2cc240e3112f0965712b5fac0 ""
@@ -152,9 +153,9 @@
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/xcolor/xcolor.sty" 1700127522 55487 80a65caedd3722f4c20a14a69e785d8f ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-abspage.sty" 1695383086 2269 4fe6fb3396214c91f164d45faf9bec45 ""
   "C:/Users/Noah/AppData/Local/Programs/MiKTeX/tex/latex/zref/zref-base.sty" 1695383086 20785 f7d1133a287929598a897c93f8f4c44b ""
-  "c:/Users/Noah/Documents/admu/3-1/math31.3/lec-notes/31.3-lec-notes.tex" 1723391732 3475 e10368cffa07996b41ad204e68b4d3e5 ""
-  "chapter1.aux" 1723391736 1403 5b52ede369bf0b1b84538855c61946ae "pdflatex"
-  "chapter1.tex" 1723391582 6359 e4b3d717f3a340f07da19468cdd14584 ""
+  "c:/Users/Noah/Documents/admu/3-1/math31.3/lec-notes/31.3-lec-notes.tex" 1723467233 3475 e10368cffa07996b41ad204e68b4d3e5 ""
+  "chapter1.aux" 1723473273 1403 59d22f1d14eab97e15836eff217448eb "pdflatex"
+  "chapter1.tex" 1723473270 11879 c383534fbf3fada154e1afd2bef6beed ""
   (generated)
   "31.3-lec-notes.aux"
   "31.3-lec-notes.log"
